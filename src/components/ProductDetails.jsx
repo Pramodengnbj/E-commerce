@@ -15,3 +15,22 @@ const ProductDetails = () => {
       .then(res => { setProduct(res.data); setLoading(false); })
       .catch(() => { setError("Product not found"); setLoading(false); });
   }, [id]);
+    if (loading) return <p style={{textAlign:'center'}}>Loading...</p>;
+  if (error) return <p style={{textAlign:'center'}}>{error}</p>;
+
+  return (
+    <div className="product-detail">
+      <img src={product.thumbnail} alt={product.title} />
+      <div>
+        <h2>{product.title}</h2>
+        <p>{product.description}</p>
+        <p><b>Price:</b> ${product.price}</p>
+        <button onClick={() => dispatch(addToCart(product))}>Add to Cart</button>
+        <br /><br />
+        <Link to="/">Back to Home</Link>
+      </div>
+    </div>
+  );
+};
+
+export default ProductDetails;
