@@ -14,3 +14,21 @@ const Checkout = () => {
     dispatch(clearCart());
     navigate("/");
   };
+  return (
+    <div className="checkout">
+      <h2>Checkout</h2>
+      <div className="checkout-form">
+        <input type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} />
+        <input type="text" placeholder="Address" value={address} onChange={e => setAddress(e.target.value)} />
+      </div>
+      <div className="checkout-summary">
+        <h3>Order Summary</h3>
+        {cartItems.map(item => (
+          <p key={item.id}>{item.title} x {item.quantity} = ${item.price * item.quantity}</p>
+        ))}
+        <h3>Total: ${total.toFixed(2)}</h3>
+        <button onClick={placeOrder}>Place Order</button>
+      </div>
+    </div>
+  );
+};
