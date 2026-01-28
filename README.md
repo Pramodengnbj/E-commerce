@@ -1,16 +1,23 @@
-# React + Vite
+# ShoppyGlobe - E-commerce Application [LINK](https://github.com/Pramodengnbj/E-commerce)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShoppyGlobe is a fully responsive E-commerce web application built using HTML, CSS, JavaScript, and React. It provides a seamless shopping experience with product listing, product details, and cart management.
 
-Currently, two official plugins are available:
+# Feature
+. Browse products by category
+ .View product details
+ .Add/remove products to/from cart
+ .Responsive design for desktop, tablet, and mobile
+ .Smooth UI/UX with modern design
+ .Easy navigation and interactive buttons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ # Tech Stack 
+ . Fronted: HTML , CSS , JavaScript,React
+ .Styling: CSS (Flexbox & Grid)
+ .Bundler: Vite
+ . Version Control: Git & Github
 
-## React Compiler
+ ## Installation & Setup 
+ 1. Clone the repository 
+ https://github.com/Pramodengnbj/E-commerce
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ cd ShoppyGoble - E-commerce npm install npm run dev
