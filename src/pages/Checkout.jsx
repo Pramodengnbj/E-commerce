@@ -9,3 +9,8 @@ const Checkout = () => {
   const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const placeOrder = () => {
+    alert("Order placed successfully!");
+    dispatch(clearCart());
+    navigate("/");
+  };
