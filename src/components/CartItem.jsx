@@ -20,3 +20,4 @@ const CartItem = ({ item }) => {
     </div>
   );
 };
+export default CartItem;
