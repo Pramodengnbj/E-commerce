@@ -4,7 +4,8 @@ import { removeFromCart, updateQuantity } from "../redux/cartSlice";
 
 const CartItem = ({ item }) => {
   const dispatch = useDispatch();
-   return (
+
+  return (
     <div className="cart-item">
       <img src={item.thumbnail} alt={item.title} />
       <div>
@@ -20,4 +21,5 @@ const CartItem = ({ item }) => {
     </div>
   );
 };
+
 export default CartItem;

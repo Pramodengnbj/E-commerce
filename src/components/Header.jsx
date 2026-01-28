@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { FaShoppingCart } from "react-icons/fa";
+
 const Header = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
@@ -18,4 +19,5 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;

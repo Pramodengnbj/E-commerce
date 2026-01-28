@@ -3,7 +3,8 @@ import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../redux/cartSlice";
-const ProductDetails = () => {
+
+const ProductDetail = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -15,7 +16,8 @@ const ProductDetails = () => {
       .then(res => { setProduct(res.data); setLoading(false); })
       .catch(() => { setError("Product not found"); setLoading(false); });
   }, [id]);
-    if (loading) return <p style={{textAlign:'center'}}>Loading...</p>;
+
+  if (loading) return <p style={{textAlign:'center'}}>Loading...</p>;
   if (error) return <p style={{textAlign:'center'}}>{error}</p>;
 
   return (
@@ -33,4 +35,4 @@ const ProductDetails = () => {
   );
 };
 
-export default ProductDetails;
+export default ProductDetail;

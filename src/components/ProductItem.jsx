@@ -5,7 +5,8 @@ import { addToCart } from "../redux/cartSlice";
 
 const ProductItem = ({ product }) => {
   const dispatch = useDispatch();
-    return (
+
+  return (
     <div className="product-item">
       <Link to={`/product/${product.id}`}>
         <img src={product.thumbnail} alt={product.title} loading="lazy" />
@@ -16,3 +17,5 @@ const ProductItem = ({ product }) => {
     </div>
   );
 };
+
+export default ProductItem;
